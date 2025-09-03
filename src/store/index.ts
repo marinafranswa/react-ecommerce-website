@@ -13,6 +13,7 @@ import storage from 'redux-persist/lib/storage'; // defaults to localStorage for
 import categories from './categories/categoriesSlice';
 import products from './products/productsSlice';
 import cart from './cart/cartSlice';
+import wishlist from './wishlist/wishlistSlice';
 
 
 
@@ -27,6 +28,7 @@ const rootReducer = combineReducers({
   categories,
   products,
   cart:persistReducer (cartPersistConfig, cart),
+  wishlist,
 })
 
 
